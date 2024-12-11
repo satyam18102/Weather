@@ -16,11 +16,10 @@ export default function WeatherApp(){
 
     let updateInfo=(newInfo)=>{
         setWeatherInfo(newInfo);
-    }
+    };
 
     return(
         <div style={{textAlign:"center"}}>
-            <h2>Weather App by Alex</h2>
             <SearchBox updateInfo={updateInfo}/>
             <br />
             <InfoBox info={weatherInfo}/>

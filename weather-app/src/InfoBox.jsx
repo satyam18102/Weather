@@ -23,12 +23,13 @@ export default function InfoBox({info}) {
         <Typography gutterBottom variant="h5" component="div">
           {info.city}
         </Typography>
-        <Typography variant="body2" color= 'text.secondary' component={"span"} >
-          <p>Temprature={info.temp}&deg;C</p>
-          <p>Humidity={info.humidity}&deg;C</p>
+        <Typography variant="body2">
+          <h3>Temprature={info.temp}&deg;C</h3>
+          <p>Humidity={info.humidity}%</p>
           <p>Min temp={info.tempMin}&deg;C</p>
           <p>Max temp={info.tempMax}</p>
-          <p>The weather can be described as <b>{info.weather}</b> and feels like {info.feelslike}&deg;C</p>
+          <p>The weather can be described as <b>{info.weather}</b> and feels like {info.feelsLike}&deg;C</p>
+          <p>{info.time}</p>
         </Typography>
       </CardContent>
     </Card>
